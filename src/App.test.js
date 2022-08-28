@@ -33,6 +33,14 @@ test('Render header', () => {
    // const header = screen.getByRole('heading')
    const headerText = screen.getByText(/add new animal/i)
 
+   /* Regex: regular expressions
+          /some text here/i
+
+          this makes the text case insensitive, unlike quotation marks which are case sensitive
+
+          regex is best practices
+   */
+
    //Assert:
    //Is the header found on the DOM?
    expect(headerText).toBeTruthy()
