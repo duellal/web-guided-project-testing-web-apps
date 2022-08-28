@@ -33,3 +33,34 @@ How can we get intellisense for jest and react testing library in VScode?
 Are there websites like edabit or execute program that are made for practicing testing?
 - Unsure
 
+What is the purpose of "throw new Error('Error Message')?
+- This is just to showcase what would happen
+- Do not put this in your tests/code
+
+Is there something that speeds up tests?
+- Run less on your computer 
+- Could be your computing power from your computer
+
+Would tests for the form work in the App test file, b/c the form is rendered in the App?
+- Yes, they would, however this is frowned upon. You could write all of your tests in the App.test.js file b/c the form component is a child of the App component.
+- But the test file would be extremely long (on a bigger application). 
+   - If you want to make a change inside an element nested 8 layers deep, how would you find that specific test is if you have thousands of lines of code?
+      - Making a new test file for each component, makes testing more attainable
+
+Can we test that the background image is present?
+- Will answer later
+
+Are all assertions functions that need to be invoked? How can we tell which ones require arguments + which ones simply need to be invoked w/o arugments?
+- Most of the time, it will be apparent in the funciton itself
+   - Example of no arguemnt: expect(header).toBeInTheDocument()
+   - Example of argument: expect(2+3).toBe(5)
+- If you can read through the statement and it finshes itself (english language structure), you probably don't need an argument
+- If you can't read through the statement, you will need an argument to complete it
+
+- Look at: [jest expect()](https://jestjs.io/docs/expect)
+
+Thoughts on "grabbing" all elements before testing, so you can reference them within each test?
+- It is bad to do this, b/c you want to write a fresh test, with a fresh render, + a fresh queries for each test.
+- article on this: [Avoid Nesting When You're Testing](https://kentcdodds.com/blog/avoid-nesting-when-youre-testing)
+
+
