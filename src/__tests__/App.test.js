@@ -1,7 +1,7 @@
 //Test suite must contain @ least 1 test or it will fail
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App'
+import App from '../App'
 
 /* 
 Throughout the testing, react/jest is making a lot of assertions:
