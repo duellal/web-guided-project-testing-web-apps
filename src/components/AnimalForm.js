@@ -17,6 +17,16 @@ const AnimalForm = ({ errors, touched, values }) => {
   };
 
   const handleSubmit = event => {
+    //Simple test inside of code:
+    // if (event) {
+    //   event.preventDefault();
+    //   const newAnimal = {
+    //     ...animal,
+    //     id: Date.now()
+    //   };
+    //   setAnimals([...animals, newAnimal]);
+    // }
+
     event.preventDefault();
     const newAnimal = {
       ...animal,
